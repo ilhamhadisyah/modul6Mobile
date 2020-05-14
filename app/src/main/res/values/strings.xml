@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">praktikum6</string>
+    <string name="title">JSON? MySQL? hah?</string>
+    <string name="tambah">Tambah Data</string>
+    <string name="list">Daftar Mahasiswa</string>
+    <string name="update">Update Data</string>
+    <string name="IDMahasiswa">ID Mahasiswa</string>
+    <string name="namamhs">Nama </string>
+    <string name="jurusan">Jurusan</string>
+    <string name="email">Email</string>
+    <string name="updatebtn">Update</string>
+    <string name="deletebtn">Delete</string>
+</resources>

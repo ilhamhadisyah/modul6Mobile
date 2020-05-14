@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/wallpaper"
+    android:layout_height="match_parent"
+    tools:context=".select">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idmhs"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/IDMahasiswa"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/namamhs"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:text="@string/namamhs"
+        app:layout_constraintEnd_toEndOf="@+id/idmhs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idmhs"
+        app:layout_constraintTop_toBottomOf="@+id/idmhs" />
+
+    <EditText
+        android:id="@+id/jurusanmhs"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:text="@string/jurusan"
+        app:layout_constraintEnd_toEndOf="@+id/namamhs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/namamhs"
+        app:layout_constraintTop_toBottomOf="@+id/namamhs" />
+
+    <EditText
+        android:id="@+id/emailmhs"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:text="@string/email"
+        app:layout_constraintEnd_toEndOf="@+id/jurusanmhs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/jurusanmhs"
+        app:layout_constraintTop_toBottomOf="@+id/jurusanmhs" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/updatebtn"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/emailmhs"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:background="@color/darkblue"
+        app:layout_constraintStart_toStartOf="@+id/emailmhs"
+        app:layout_constraintTop_toBottomOf="@+id/emailmhs" />
+
+    <Button
+        android:id="@+id/button2"
+        android:background="@color/darkblue"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="332dp"
+        android:textColor="@color/white"
+        android:text="@string/deletebtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.342" />
+</androidx.constraintlayout.widget.ConstraintLayout>
